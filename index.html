@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navback" id="navback">
+            <div class="navbar">
+                <h1 class="logo">CafeLogo</h1>
+                <ul>
+                    <li><a href="#" class="links">Home</a></li>
+                    <li><a href="#" class="links">About</a></li>
+                    <li><a href="#" class="links">Chef</a></li>
+                    <li><a href="#" class="links">Contact</a></li>
+                </ul>
+                <div class="actions">
+                    <a href="#" class="callnow">Call Now! | 0555 555 5555</a>
+                    <a href="#" class="reserve">Reserve a table</a>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="yazilar">
+          <div class="kucukYazi">
+            <h5>YOUR PERFECT BREAKFAST</h5>
+          </div>
+          <div class="buyukYazi">
+            <h1>Enjoy our special menus every Sunday and Friday</h1>
+          </div>
+          <div class="rezervation">
+            <a href="#">Rezervation</a>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+    </header>
+    <section id="About">
+        <div class="maxwidth">
+
+          <div class="div5">
+            <div class="sectionYazi1">
+              <h5 >Read our history</h5>
+            </div>
+            <div class="sectionYazi2">
+              <h3>We've been Making The Delicious Foods Since 1999</h3><hr>
+            </div>
+            <div class="sectionParagraf">
+             <p>Fusce hendrerit malesuada lacinia. Donec semper semper sem vitae malesuada. Proin scelerisque risus et ipsum semper molestie sed in nisi. Ut rhoncus congue lectus, rhoncus venenatis leo malesuada id.</p>
+            </div>
+            <div class="sectionParagraf">
+              <p>Fusce hendrerit malesuada lacinia. Donec semper semper sem vitae malesuada. Proin scelerisque risus et ipsum semper molestie sed in nisi. Ut rhoncus congue lectus, rhoncus venenatis leo malesuada id.</p>
+             </div>
+  
+          </div>
+         
+
+          <div class="aboutImage">
+            <img src="about-image.jpg" alt="">
+          </div>
+
+        </div>
+    </section>
+
+    <section class="chefs">
+      <div class="baslik5"><h2>Meet our chefs</h2></div>
+     <div class="sefler">
+      <div class="chefs1">
+        <a href="#"><img src="team-image1.jpg" alt=""><h3 class="imgYazisi">Duis vel lacus id magna mattis vehicula</h3> </a>
+        <h4 class="sefIsimleri">New Catherine</h4>
+        <h5 class="sef2">Kitchen Officer</h5>
+      </div>
+
+      <div class="chefs1">
+       <a href="#"> <img src="team-image2.jpg" alt="" ><h3 class="imgYazisi">Duis vel lacus id magna mattis vehicula</h3></a>
+       <h4 class="sefIsimleri">Lindsay Perlen</h4>
+        <h5 class="sef2">Owner & Manager</h5>
+      </div>
+
+      <div class="chefs1">
+        <a href="#"><img src="team-image3.jpg" alt=""> <h3 class="imgYazisi">Duis vel lacus id magna mattis vehicula</h3></a>
+        <h4 class="sefIsimleri">Isabella Grace</h4>
+        <h5 class="sef2">Pizza Specialist</h5>
+        
+      </div>
+
+     </div>
+    </section>
+
+    <br> <br>
+
+
+
+
+
+
+    <script>
+      window.addEventListener('scroll', function() {
+          const navback = document.querySelector('.navback');
+          const yazilarJS = document.querySelector('.yazilar');
+          if (window.scrollY > 30) {
+              yazilarJS.style.paddingTop = "230px";
+              navback.classList.add('scrolled');
+          } else {
+              yazilarJS.style.paddingTop = "0px";
+              navback.classList.remove('scrolled');
+          }
+      });
+  </script>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</html>
