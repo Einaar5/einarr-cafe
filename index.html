@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="/styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,19 +17,29 @@
 <body>
     <header>
         <div class="navback" id="navback">
-            <div class="navbar">
-                <h1 class="logo">CafeLogo</h1>
-                <ul>
-                    <li><a href="#" class="links">Home</a></li>
-                    <li><a href="#" class="links">About</a></li>
-                    <li><a href="#" class="links">Chef</a></li>
-                    <li><a href="#" class="links">Contact</a></li>
+          <div class="navbar">
+            <div class="menu-bar" id="menu-bar">
+                <a href="#" id="menu-toggle">Menu</a>
+                <ul class="menu-content" id="menu-content">
+                    <li><a href="#" class="links2">Home</a></li>
+                    <li><a href="#" class="links2">About</a></li>
+                    <li><a href="#" class="links2">Chef</a></li>
+                    <li><a href="#" class="links2">Contact</a></li>
                 </ul>
-                <div class="actions">
-                    <a href="#" class="callnow">Call Now! | 0555 555 5555</a>
-                    <a href="#" class="reserve">Reserve a table</a>
-                </div>
             </div>
+            <h1 class="logo">RestLogo</h1>
+            <ul>
+                <li><a href="#" class="links">Home</a></li>
+                <li><a href="#" class="links">About</a></li>
+                <li><a href="#" class="links">Chef</a></li>
+                <li><a href="#" class="links">Contact</a></li>
+            </ul>
+            <div class="actions">
+                <a href="#" class="callnow">Call Now! | 0555 555 5555</a>
+                <a href="#" class="reserve">Reserve a table</a>
+            </div>
+        </div>
+        </div>
         </div>
        
 
@@ -74,7 +84,7 @@
          
 
           <div class="aboutImage">
-            <img src="about-image.jpg" alt="">
+            <img src="/images/about-image.jpg" alt="">
           </div>
 
         </div>
@@ -82,21 +92,22 @@
 
     <section class="chefs">
       <div class="baslik5"><h2>Meet our chefs</h2></div>
+      <div class="baslik6"><h5>They are nice & friendly</h5></div>
      <div class="sefler">
       <div class="chefs1">
-        <a href="#"><img src="team-image1.jpg" alt=""><h3 class="imgYazisi">Duis vel lacus id magna mattis vehicula</h3> </a>
+        <a href="#"><img src="/images/team-image1.jpg" alt=""><h3 class="imgYazisi">Duis vel lacus id magna mattis vehicula</h3> </a>
         <h4 class="sefIsimleri">New Catherine</h4>
         <h5 class="sef2">Kitchen Officer</h5>
       </div>
 
       <div class="chefs1">
-       <a href="#"> <img src="team-image2.jpg" alt="" ><h3 class="imgYazisi">Duis vel lacus id magna mattis vehicula</h3></a>
+       <a href="#"> <img src="/images/team-image2.jpg" alt="" ><h3 class="imgYazisi">Duis vel lacus id magna mattis vehicula</h3></a>
        <h4 class="sefIsimleri">Lindsay Perlen</h4>
         <h5 class="sef2">Owner & Manager</h5>
       </div>
 
       <div class="chefs1">
-        <a href="#"><img src="team-image3.jpg" alt=""> <h3 class="imgYazisi">Duis vel lacus id magna mattis vehicula</h3></a>
+        <a href="#"><img src="/images/team-image3.jpg" alt=""> <h3 class="imgYazisi">Duis vel lacus id magna mattis vehicula</h3></a>
         <h4 class="sefIsimleri">Isabella Grace</h4>
         <h5 class="sef2">Pizza Specialist</h5>
         
@@ -105,26 +116,87 @@
      </div>
     </section>
 
-    <br> <br>
+    
+    <div class="menuBaslik"><h2>Our Menus</h2></div>
+    <div class="menuAlt"><h6>Tea Time & Dining</h6></div>
+    <section class="bolum3">
+        <div class="dis">
+            <div class="gorseller">
+                <div class="image-frame">
+                    <a href="#"><img src="/images/menugorsel/menu-image1.jpg" alt=""><h3 class="menuyazisi"></h3></a>
+                    <div class="yemekisimleri"><h3>Breakfast</h3></div>
+                </div>
+            </div>
+            <div class="gorseller">
+                <div class="image-frame">
+                    <a href="#"><img src="/images/menugorsel/menu-image3.jpg" alt=""><h3 class="menuyazisi"></h3></a>
+                    <div class="yemekisimleri"><h3>Dinner</h3></div>
+                </div>
+            </div>
+            <div class="gorseller">
+                <div class="image-frame">
+                    <a href="#"><img src="/images/menugorsel/menu-image4.jpg" alt=""><h3 class="menuyazisi"></h3></a>
+                    <div class="yemekisimleri"><h3>Salads</h3></div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="image5">
+      <div>
+        <img src="/images/—Pngtree—gourmet japanese restaurant sushi creative_1016307.jpg japanese restaurant sushi creative_1016307.jpg" alt="">
+        <div class="ortaYazi">
+          <h3>Testimonials</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, ipsa inventore quis consectetur quo qui.</p>
+        </div>
+      </div>
+    </section>
 
 
 
 
+    
+    <section class="bolum4">
+      <div class="Contact">
+          <div class="harita">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.515416312287!2d100.56103375063772!3d13.763748100248034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f3fba7f99df%3A0x2e1a75811e6e2b2a!2sG%20Tower!5e0!3m2!1sen!2sth!4v1620061140195!5m2!1sen!2sth" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="inputs">
+              <div class="col-md-12 col-sm-12">
+                  <div class="section-title wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                      <h2>Contact Us</h2>
+                  </div>
+              </div>
+  
+              <!-- CONTACT FORM -->
+              <form action="#" method="post" class="wow fadeInUp animated" id="contact-form" role="form" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                  
+                  <!-- IF MAIL NOT SENT -->
+                  
+  
+                  <div class="col-md-6 col-sm-6">
+                      <input type="text" class="form-control" id="cf-name" name="name" placeholder="Full name">
+                  </div>
+  
+                  <div class="col-md-6 col-sm-6">
+                      <input type="email" class="form-control" id="cf-email" name="email" placeholder="Email address">
+                  </div>
+  
+                  <div class="col-md-12 col-sm-12">
+                      <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Subject">
+  
+                      <textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="Tell about your project"></textarea>
+  
+                      <button type="submit" class="form-control" id="cf-submit" name="submit">Send Message</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </section>
 
 
-    <script>
-      window.addEventListener('scroll', function() {
-          const navback = document.querySelector('.navback');
-          const yazilarJS = document.querySelector('.yazilar');
-          if (window.scrollY > 30) {
-              yazilarJS.style.paddingTop = "230px";
-              navback.classList.add('scrolled');
-          } else {
-              yazilarJS.style.paddingTop = "0px";
-              navback.classList.remove('scrolled');
-          }
-      });
-  </script>
+    <script src="/JavaScript/JS.js"></script>
   
 </body>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

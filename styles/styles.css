@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+
+
+/* Genel stil ayarları */
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    transition-duration: 0.5s;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Header stili */
+header {
+    background-image: url(/images/pexels-pixabay-260922.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 90vh;
+    
+}
+
+/* Navbar konteyneri stili */
+.navback {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    transition: background-color 0.3s ease;
+    height: 90px;
+}
+
+/* Navbar stili */
+.navbar {
+    line-height: 50px;
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 20px;
+    align-items: center; /* Yükseklik hizalaması */
+    justify-content: space-between; /* Alanı en iyi şekilde kullanmak için */
+}
+
+/* Navbar içindeki liste stili */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    padding: 25px;
+}
+
+/* Navbar link stili */
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+/* Navbar başlık stili */
+.navbar h1 {
+   width: 200px;
+}
+
+
+
+h1.logo {
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* Actions stili */
+.actions {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.reserve {
+    background-color: red;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a.reserve {
+    text-decoration: none;
+    color: white;
+}
+
+.callnow {
+    font-size: 13px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.yazilar{
+    
+    width: 1000px;
+    height: 300px;
+    max-width: 1100px;
+    /*background-color: red;*/
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+.yazilar .rezervation{
+    background-color: transparent;
+    width: 130px;
+    height: 40px;
+    border: 1px solid white;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s, border 0.5s;
+
+}
+
+.yazilar .rezervation a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.yazilar .kucukYazi{
+    color: white;
+}
+
+.yazilar .buyukYazi{
+    width: 600px;
+}
+
+.yazilar .buyukYazi h1{
+    color:  white;
+}
+
+
+
+
+
+
+
+
+.maxwidth {
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.aboutImage {
+    flex-shrink: 0;
+    padding-right: 10px;
+}
+
+.aboutImage img {
+    width: 500px;
+    height: auto;
+    display: block;
+}
+
+
+
+
+#About{
+    background-color: rgba(0, 0, 0, 0);
+    height: 500px;
+    
+}
+
+
+
+
+.menu-bar {
+    display: none;
+    
+}
+
+.menu-bar #menu-toggle {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-bar .menu-content {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin-left: -20px;
+    margin-top: 30px;
+    background-color: #333;
+    position: absolute;
+    top: 60px; /* Menü çubuğunun hemen altında */
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-bar .menu-content li {
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-bar .menu-content li a {
+    color: white;
+    display: block;
+}
+
+.menu-bar .menu-content li a:hover {
+    background-color: #555;
+}
+
+
+
+
+
+ 
+
+.maxwidth h5{
+    color: rgb(140, 140, 140);
+    font-size: 13px;
+}
+
+
+.sectionYazi2{
+    width: 400px;
+}
+.sectionYazi2 h3{
+    color: black;
+}
+
+.sectionParagraf{
+    width: 400px ;
+    color: rgb(121, 121, 121);
+}
+
+.sectionParagraf p{
+    font-size: 13px;
+}
+ 
+
+.div5{
+    width: 500px;
+}
+
+.bolum3{
+
+}
+.dis {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gorseller {
+    flex-direction: row;
+    
+}
+
+.image-frame {
+    overflow: hidden;
+    width: 68vh;
+    height: 38vh;
+    position: relative;
+}
+
+.gorseller a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gorseller a img:hover {
+    transform: scale(1.2);
+}
+
+.yemekisimleri {
+    position: absolute;
+    bottom: -100%; /* Initially hidden below the frame */
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional background for readability */
+    color: white; /* Optional text color */
+    transition: bottom 0.3s ease; /* Smooth transition */
+}
+.yemekisimleri h3{
+    font-size: 20px;
+}
+
+.image-frame:hover .yemekisimleri {
+    bottom: 0; /* Slide up into view on hover */
+}
+.image5 {
+    margin-top: -120px;
+    display: flex;
+    position: relative;
+    height: 400px;
+    background-image: url(/images/—Pngtree—gourmet\ japanese\ restaurant\ sushi\ creative_1016307.jpg);
+    background-size: cover; /* Arka plan görüntüsünün div'i kaplamasını sağlar */
+    background-position: center; /* Arka plan görüntüsünü ortalar */
+    background-repeat: no-repeat; /* Arka plan görüntüsünün tekrarlanmasını engeller */
+    background-attachment: fixed; /* Arka plan görüntüsünün sabit kalmasını sağlar */
+}
+
+.image5 div img {
+    
+    display: none; /* Orijinal img öğesini gizler */
+}
+
+
+
+
+
+/* Genel stiller */
+.chefs {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(243, 243, 243);
+}
+
+.sefler {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.sefler h4 {
+    text-align: center;
+}
+
+.chefs1 {
+    margin-top: 200px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+.chefs1 a {
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.chefs1 img {
+    width: 320px;
+    transition: transform 0.3s ease;
+}
+.sef2{
+    font-size: 14px;
+    color: rgb(155, 155, 155);
+}
+
+.imgYazisi {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.chefs1:hover .imgYazisi {
+    transform: translateY(0);
+}
+
+.chefs1:hover img {
+    transform: scale(1.2);
+}
+
+
+
+
+
+.sefIsimleri {
+    margin-top: 20px;
+    color: rgb(52, 52, 52);
+}
+
+.baslik5 {
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    margin-top: 80px;
+    position: absolute;
+    text-align: center;
+    margin-bottom: 20px; /* Altındaki elemanlar ile mesafe bırakır */
+}
+
+.baslik6{
+    position: absolute;
+    margin-top: 130px;
+    color: rgb(167, 167, 167);
+    
+}
+
+.baslik6 h5{
+    font-size: 13px;
+}
+
+
+
+
+
+
+/* Scroll yapıldığında navback arka plan rengi ve konumlandırma */
+.navback.scrolled {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Scroll yapıldığında linklerin ve başlığın rengi */
+.navback.scrolled .links,
+.navback.scrolled h1,
+.navback.scrolled .callnow {
+    color: rgb(0, 0, 0);
+}
+
+.navback.scrolled h1.logo{
+    color: rgb(44, 44, 44);
+}
+
+/* Hover durumunda linklerin ve butonların renkleri */
+.navbar ul li a:hover {
+    color: brown;
+}
+
+a.callnow:hover {
+    color: brown;
+    text-decoration: none;
+}
+
+a.reserve:hover {
+    background-color: darkred;
+}
+
+/* Diğer stil kuralları */
+
+
+.yazilar .rezervation:hover{
+    background-color: brown;
+    border: 1px solid brown;
+    transition-duration: 0.5s;
+}
+
+/* Scroll yapıldığında hover durumları */
+.navback.scrolled .links:hover {
+    color: rgb(199, 22, 22);
+}
+.navback.scrolled .callnow:hover {
+    color: brown;
+}
+
+.navback.scrolled h1 {
+    color: brown;
+}
+
+.navback.scrolled .callnow {
+    color: rgb(0, 0, 0);
+}
+
+.bolum3{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin-top: 200px;
+}
+
+.menuBaslik{
+    display: flex;
+    margin-bottom: -100px;
+    margin-top: 100px;
+}
+.menuBaslik h2{
+    margin: 0 auto;
+    color: rgb(63, 63, 63);
+}
+
+.menuAlt{
+    display: flex;
+    justify-content: center;
+}
+
+.menuAlt h6{
+    position: absolute;
+    margin-top: 110px;
+    font-size: 12px;
+    color: rgb(190, 190, 190);
+}
+
+.bolum4{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+
+.image5 {
+    position: relative;
+    height: 500px; /* Resim alanının yüksekliği */
+    overflow: hidden;
+}
+
+.image5 img {
+    width: 100%;
+    height: auto;
+}
+
+.image5 .ortaYazi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ortalamak için */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Köşeleri yuvarlatmak için */
+}
+
+.image5 .ortaYazi h3,
+.image5 .ortaYazi p {
+    margin: 10px 0;
+}
+
+.bolum4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.Contact {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.harita {
+    flex: 1;
+    height: 400px;
+    margin-right: 20px;
+}
+.bolum4{
+    margin-top: 150px;
+}
+
+.inputs {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.inputs .col-md-6, .inputs .col-sm-6, .inputs .col-md-12, .inputs .col-sm-12 {
+    margin-bottom: 15px;
+}
+
+.inputs h2 {
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact-form .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#cf-submit {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#cf-submit:hover {
+    background-color: #c9302c;
+}
+
+
+
+/* Responsive*/
+
+@media (max-width:2672px) {
+    .image-frame {
+        width: 350px;
+    }
+    
+}
+
+@media (max-width:1055px){
+    .dis{
+        margin-top: -2500px; /* margin-top: -300px; kaldırıldı */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: -00px;
+    }
+    .image-frame {
+        width: 450px;
+    }
+    .bolum3{
+        height: 2000px;
+    }
+
+    .aboutImage{
+        flex-direction: column;
+    }
+    .sefler{
+        flex-direction: column;
+    }
+    .maxwidth{
+        flex-direction: column;
+    }
+    .yazilar{
+        max-width: 500px;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .chefs{
+        margin-top: 200px;
+    }
+    .chefs1{
+        gap: -100px;
+        padding: -50px;
+    }
+    .sefler{
+        display: block;
+        padding: -100px;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .image5{
+        margin-top: -1500px;
+    }
+}
+
+@media (max-width:716px) {
+    .yazilar{
+        max-width: 300px;
+        text-align: center;
+        justify-content: center;
+    }
+    .yazilar h1{
+        font-size: 35px;
+        max-width: 500px;
+        text-align: center;
+    }
+    .buyukYazi{
+        max-width: 300px;
+    }
+
+    .actions{
+        display: none;
+    }
+
+    .navbar .logo{
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .yazilar a{
+        
+        text-align: center;
+    }
+    .maxwidth {
+        max-width: 100px;
+        width: 100px;
+        
+    }
+    .div5{
+        width: 200px;
+    }
+    .sectionYazi2{
+        width: 200px;
+    }
+    .sectionParagraf{
+        width: 200px;
+    }
+    .image-frame{
+        width: 250px;
+    }
+    .aboutImage img{
+        width: 300px;
+    }
+    .chefs{
+        margin-top: 300px;
+        
+    }
+
+    .rezervation{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0  auto;
+    }
+    .rezervation a{
+        justify-content: center;
+        text-align: center;
+    }
+    .menu-bar {
+        display: block;
+    }
+}
