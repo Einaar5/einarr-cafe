@@ -28,7 +28,7 @@ a {
 
 /* Header stili */
 header {
-    background-image: url(/images/pexels-pixabay-260922.jpg);
+    background-image: url(pexels-pixabay-260922.jpg);
     width: 100%;
     background-size: cover;
     height: 90vh;
@@ -341,7 +341,7 @@ a.reserve {
     display: flex;
     position: relative;
     height: 400px;
-    background-image: url(/images/—Pngtree—gourmet\ japanese\ restaurant\ sushi\ creative_1016307.jpg);
+    background-image: url(—Pngtree—gourmet\ japanese\ restaurant\ sushi\ creative_1016307.jpg);
     background-size: cover; /* Arka plan görüntüsünün div'i kaplamasını sağlar */
     background-position: center; /* Arka plan görüntüsünü ortalar */
     background-repeat: no-repeat; /* Arka plan görüntüsünün tekrarlanmasını engeller */
