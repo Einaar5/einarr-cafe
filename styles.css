@@ -554,11 +554,13 @@ a.reserve:hover {
     position: relative;
     height: 500px; /* Resim alanının yüksekliği */
     overflow: hidden;
+    box-shadow: inset 0 0 850px  rgba(0, 0, 0, 1);
 }
 
 .image5 img {
     width: 100%;
     height: auto;
+   
 }
 
 .image5 .ortaYazi {
@@ -617,6 +619,10 @@ a.reserve:hover {
 
 .inputs h2 {
     margin-bottom: 20px;
+}
+.Contact{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #contact-form {
@@ -758,6 +764,9 @@ a.reserve:hover {
     .chefs{
         margin-top: 300px;
         
+    }
+    .Contact{
+        flex-direction: column;
     }
 
     .rezervation{
